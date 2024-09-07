@@ -1,5 +1,41 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+# 1. NextJS 버전
+```
+npx create-next-app@14.1.0
+```
+
+# 2. 필수 패키지
+```
+yarn add react-spinners@^0.13.8
+yarn add react-icons@^5.0.1
+yarn add tailwind-merge@^2.2.1
+yarn add zustand@^4.5.0
+```
+
+# 3. install shadcn
+- 설치법 : https://ui.shadcn.com/docs/installation/next
+- https://ui.shadcn.com/docs/components/carousel
+
+```npx shadcn-ui@latest init
+✔ Which style would you like to use? › Default  
+✔ Which color would you like to use as base color? › Slate  
+✔ Would you like to use CSS variables for colors? … no / yes
+```
+
+- tailwind.config.ts > content 부분에 js,ts,jsx,tsx,mdx 작성 되어 있는지 확인
+
+
+# 4. darkmod
+- https://ui.shadcn.com/docs/dark-mode/next
+
+```
+yarn add next-themes
+```
+- 다크모드 provider 제공
+- .dark 클래스에 다크 모드 관련 색상 정의
+
+
 ## Getting Started
 
 First, run the development server:

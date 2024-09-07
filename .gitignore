@@ -26,7 +26,8 @@ yarn-debug.log*
 yarn-error.log*
 
 # local env files
-.env*.local
+*.env
+!*.env.example
 
 # vercel
 .vercel
@@ -34,3 +35,22 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# uploads and temporary files
+/public/uploads/
+Thumbs.db
+*.log
+*.cache
+*.tmp
+
+# IDE settings
+/.vscode/
+/.idea/
+
+# lock files (optional: include if you prefer not to share lock files)
+# package-lock.json
+# yarn.lock
+
+# additional build files
+/dist/
+/temp/
